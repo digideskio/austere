@@ -1,0 +1,416 @@
+/*
+RESETS OF THE CLEAN THEME
+*/
+
+.limiter {
+    padding: 0;
+    width: auto;
+}
+
+a:link {
+  color: #007EE4;
+}
+
+a:visited {
+  color: #3b98e4;
+}
+
+a:hover {
+  color: #007EE4;
+}
+
+a:visited:hover {
+  color: #1a8fed;
+}
+
+a:focus {
+  color: #333;
+}
+
+input.form-submit, input.teaser-button, input[type="button"] {
+    color: #007EE4;
+}
+
+/*input.form-submit, input.teaser-button, input[type="button"] {
+    background-color: #E6E6E6;
+    border: 1px solid #666;
+    color: #007EE4;
+    font-weight: bold;
+}*/
+
+/*
+BASIC CUSTOM LAYOUT
+*/
+
+body {
+    background-color: #181818;
+}
+
+#container {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 855px;
+}
+
+#fixedHeader {
+    float: left;
+    margin: 20px 0 0 0;
+    padding: 0 0 20px 0;
+    position: fixed;
+    text-align: right;
+    width: 337px;
+    z-index: 10;
+}
+
+#site-name {
+    height: 10px; left: -2000px; overflow: hidden; position: absolute; text-indent: -1000em; top: 0; width: 10px; /* not visible */
+}
+
+#page {
+    background-color: #fff;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    float: right;
+    padding: 20px;
+    position: relative;
+    width: 475px;
+    z-index: 20;
+}
+
+#block-menu-secondary-links h2 {
+    height: 10px; left: -2000px; overflow: hidden; position: absolute; text-indent: -1000em; top: 0; width: 10px; /* not visible */
+}
+
+#footer {
+    bottom: 0;
+    float: left;
+    position: fixed;
+    text-align: right;
+    width: 337px;
+    z-index: 10;
+}
+
+#footer .limiter {
+    padding-right: 20px;
+}
+
+#footer .experience_bureau {
+    margin: 0;
+}
+
+#footer .experience_bureau a {
+    color: #333;
+    font-size: 0.9em;
+    padding: 0 5px;
+}
+
+#footer .experience_bureau a:hover {
+    color: #666;
+}
+
+#footer .experience_bureau span {
+    display: none;
+}
+
+/* content and shopping cart */
+
+#main #content {
+    float: none;
+    width: auto;
+}
+
+#left, .sidebar {
+    float: none;
+    margin: 0;
+    width: auto;
+}
+
+/*
+NAVIGATION
+*/
+
+#navigation {
+    padding: 10px 15px 0 0;
+}
+
+#navigation a, #footer .menu a, #header a {
+    color: #fff;
+    padding: 0 5px;
+}
+
+#navigation a:hover, #footer .menu a:hover, #header a:hover {
+    text-decoration: underline;
+}
+
+#navigation .active a, #footer .menu .active a, #header .active a {
+    text-decoration: underline;
+}
+
+/* tabs */
+
+#tabs ul.tabs {
+    border-bottom: 1px solid #181818;
+}
+
+#tabs ul.tabs li {
+    margin-bottom: -1px;
+}
+
+#tabs ul.tabs li a {
+    border: 1px solid #666;
+    border-bottom: none;
+    display: block;
+    height: 1.5em;
+    line-height: 1.5em;
+    padding: 0 0.5em;
+}
+
+#tabs ul.tabs li a:hover {
+    background-color: #ebebeb;
+    border: 1px solid #181818;
+}
+
+#tabs ul.tabs li a.active, #tabs ul.tabs li.active a {
+    background-color: #fff;
+    border: 1px solid #181818;
+    border-bottom: 1px solid #fff;
+}
+
+/* catalog menu is in the header */
+
+#header {
+    padding: 0 20px 0 0;
+}
+
+#header h2 {
+    height: 10px; left: -2000px; overflow: hidden; position: absolute; text-indent: -1000em; top: 0; width: 10px; /* not visible */
+}
+
+#header .menu {
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+}
+
+#header .menu li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#header .menu li a {
+    display: inline;
+}
+
+/* footer extras */
+
+#footer .feed-icon {
+    display: none;
+}
+
+#footer .menu {
+    line-height: 2;
+}
+
+/*
+SHOPPING CART
+*/
+
+#block-uc_cart-0 {
+    color: #666;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+#block-uc_cart-0 h2 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+#block-uc_cart-0 h2 .cart-block-arrow {
+    vertical-align: middle;
+}
+
+#block-uc_cart-0 p {
+    margin-bottom: 0.5em;
+}
+
+#block-uc_cart-0 table {
+    clear: both;
+    float: right;
+    width: auto;
+}
+
+#block-uc_cart-0 .cart-block-item-title {
+    width: auto;
+}
+
+#block-uc_cart-0 td, #block-uc_cart-0 th {
+    color: #666;
+    padding: 2px 10px;
+}
+
+#block-uc_cart-0 ul.links {
+    line-height: 1;
+    margin-top: 2px;
+}
+
+#block-uc_cart-0 ul.links li a {
+    margin: 0;
+}
+
+#store-footer {
+    display: none;
+}
+
+/* temp hide expandable cart */
+
+/*#block-uc_cart-0 .block-title {
+    padding-right: 1em;
+}
+
+#block-uc_cart-0 .cart-block-arrow {
+    display: none;
+}
+
+#block-uc_cart-0 #cart-block-contents {
+    display: none !important;
+}*/
+
+/*
+CATALOG PAGE
+*/
+
+.view-uc-shoelisting .view-content {
+    font-size: 0.9em;
+    margin-top: 3em;
+}
+
+.view-uc-shoelisting .views-row {
+    border-top: 1px solid #ccc;
+    margin: 0;
+    min-height: 180px;
+    padding: 40px 200px 40px 0;
+    position: relative;
+}
+
+.view-uc-shoelisting .views-row:last-child {
+    border-bottom: none;
+}
+
+.view-uc-shoelisting .views-field-field-image-cache-fid, .view-uc-shoelisting .views-field-field-image-preview-fid {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 180px;
+}
+
+.view-uc-shoelisting .views-field-field-image-cache-fid {
+    z-index: 10;
+}
+
+.view-uc-shoelisting .views-field-field-image-preview-fid {
+    z-index: 5;
+}
+
+.view-uc-shoelisting .views-label-tid {
+    display: none;
+}
+
+.view-uc-shoelisting .views-row ul, .view-uc-shoelisting .views-row li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.view-uc-shoelisting .views-row li {
+    margin: 0 0 0.5em 0;
+}
+
+.view-uc-shoelisting .views-row ul .key {
+    color: #666;
+    display: inline-block;
+    font-weight: normal;
+    line-height: 1.25;
+    margin: 0 10px 0 0;
+    text-align: right;
+    text-transform: lowercase;
+    vertical-align: top;
+    width: 80px;
+}
+
+.view-uc-shoelisting .views-row ul .value {
+    display: inline-block;
+    line-height: 1.25;
+    text-transform: lowercase;
+    vertical-align: top;
+    width: 180px;
+}
+
+.view-uc-shoelisting .views-row ul .value p {
+    display: inline-block;
+    margin: 0;
+}
+
+.view-uc-shoelisting .views-field-buyitnowbutton {
+    margin-top: 1.5em;
+}
+
+.view-uc-shoelisting .views-row .views-field-buyitnowbutton .key {
+    margin-top: 0.3em;
+}
+
+.view-uc-shoelisting .views-field-buyitnowbutton input {
+    margin: 0;
+}
+
+/*
+UBERCART CHECKOUT ETC
+*/
+
+/* general */
+
+fieldset, div.fieldset {
+    margin: 0 0 20px;
+}
+
+/* cart summary */
+
+#cart-pane h2 {
+    background: none;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+#cart-pane .fieldset-content {
+    border: none;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+/* ORDER REVIEW TABLE */
+
+.order-review-table {
+    margin-top: 2em;
+    width: 100%;
+}
+
+.order-review-table td {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.order-review-table table {
+    margin-bottom: 0;
+}
+
+.order-review-table td.data-col, .order-review-table td.title-col {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.order-review-table .review-button-row {
+    background-color: #fff;
+    text-align: center;
+}

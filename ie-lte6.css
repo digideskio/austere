@@ -1,0 +1,21 @@
+#container {
+    position: relative;
+}
+
+#fixedHeader {
+    left: 0;
+    position: absolute;
+    top: 20px;
+    width: 337px;
+}
+
+#footer {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 337px;
+}
+
+#footer ul.menu li a {
+    display: inline;
+}
