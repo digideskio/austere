@@ -49,7 +49,7 @@ body {
 #container {
     margin: 0 auto;
     overflow: hidden;
-    width: 855px;
+    width: 960px;
 }
 
 #fixedHeader {
@@ -73,7 +73,7 @@ body {
     float: right;
     padding: 20px;
     position: relative;
-    width: 475px;
+    width: 583px;
     z-index: 20;
 }
 
@@ -282,53 +282,66 @@ SHOPPING CART
 CATALOG PAGE
 */
 
-.view-uc-shoelisting .view-content {
+.view-uc-shoelisting .view-content, .view-uc-shoe-single .view-content {
     font-size: 0.9em;
     margin-top: 3em;
 }
 
-.view-uc-shoelisting .views-row {
+.view-uc-shoelisting .views-row, .view-uc-shoe-single .views-row {
     border-top: 1px solid #ccc;
     margin: 0;
     min-height: 180px;
-    padding: 40px 200px 40px 0;
+    padding: 40px 290px 40px 10px;
     position: relative;
 }
 
-.view-uc-shoelisting .views-row:last-child {
+.view-uc-shoe-single .views-row {
+    border-top: none;
+}
+
+.view-uc-shoelisting .views-row:last-child, .view-uc-shoe-single .views-row:last-child {
     border-bottom: none;
 }
 
-.view-uc-shoelisting .views-field-field-image-cache-fid, .view-uc-shoelisting .views-field-field-image-preview-fid {
+.view-uc-shoelisting .views-field-field-image-cache-fid, .view-uc-shoelisting .views-field-field-image-preview-fid,
+.view-uc-shoe-single .views-field-field-image-cache-fid, .view-uc-shoe-single .views-field-field-image-preview-fid {
+    padding-right: 10px;
     position: absolute;
     right: 0;
+    text-align: right;
     top: 40px;
-    width: 180px;
+    width: 274px;
 }
 
-.view-uc-shoelisting .views-field-field-image-cache-fid {
+.view-uc-shoelisting .views-field-field-image-cache-fid img, .view-uc-shoelisting .views-field-field-image-preview-fid img,
+.view-uc-shoe-single .views-field-field-image-cache-fid img, .view-uc-shoe-single .views-field-field-image-preview-fid img {
+    border: 2px solid #f5f5f5;
+}
+
+.view-uc-shoelisting .views-field-field-image-cache-fid, .view-uc-shoe-single .views-field-field-image-cache-fid {
     z-index: 10;
 }
 
-.view-uc-shoelisting .views-field-field-image-preview-fid {
+.view-uc-shoelisting .views-field-field-image-preview-fid, .view-uc-shoe-single .views-field-field-image-preview-fid {
     z-index: 5;
 }
 
-.view-uc-shoelisting .views-label-tid {
+.view-uc-shoelisting .views-label-tid, .view-uc-shoe-single .views-label-tid {
     display: none;
 }
 
-.view-uc-shoelisting .views-row ul, .view-uc-shoelisting .views-row li {
+.view-uc-shoelisting .views-row ul, .view-uc-shoelisting .views-row li,
+.view-uc-shoe-single .views-row ul, .view-uc-shoe-single .views-row li {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.view-uc-shoelisting .views-row li {
+.view-uc-shoelisting .views-row li, .view-uc-shoe-single .views-row li {
     margin: 0 0 0.5em 0;
 }
 
-.view-uc-shoelisting .views-row ul .key {
+.view-uc-shoelisting .views-row ul .key, .view-uc-shoe-single .views-row ul .key {
     color: #666;
     display: inline-block;
     font-weight: normal;
@@ -340,29 +353,33 @@ CATALOG PAGE
     width: 80px;
 }
 
-.view-uc-shoelisting .views-row ul .value {
+.view-uc-shoelisting .views-row ul .value, .view-uc-shoe-single .views-row ul .value {
     display: inline-block;
     line-height: 1.25;
     text-transform: lowercase;
     vertical-align: top;
-    width: 180px;
+    width: 190px;
 }
 
-.view-uc-shoelisting .views-row ul .value p {
+.view-uc-shoelisting .views-row ul .value p, .view-uc-shoe-single .views-row ul .value p {
     display: inline-block;
     margin: 0;
 }
 
-.view-uc-shoelisting .views-field-buyitnowbutton {
+.view-uc-shoelisting .views-field-buyitnowbutton, .view-uc-shoe-single .views-field-buyitnowbutton {
     margin-top: 1.5em;
 }
 
-.view-uc-shoelisting .views-row .views-field-buyitnowbutton .key {
+.view-uc-shoelisting .views-row .views-field-buyitnowbutton .key, .view-uc-shoe-single .views-row .views-field-buyitnowbutton .key {
     margin-top: 0.3em;
 }
 
-.view-uc-shoelisting .views-field-buyitnowbutton input {
+.view-uc-shoelisting .views-field-buyitnowbutton input, .view-uc-shoe-single .views-field-buyitnowbutton input {
     margin: 0;
+}
+
+#cartButton {
+    float: right;
 }
 
 /*
