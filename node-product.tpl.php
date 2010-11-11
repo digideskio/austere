@@ -12,13 +12,18 @@ $imagePath = $node->field_image_cache['0']['filepath'];
 <?php // get all images
 foreach ($node->field_image_cache as $images) {
 ?>
-    <a href="/files/imagecache/product/<?php print $images['filepath']; ?>" class="thickbox" title="<?php print $images['title']; ?>" rel="pagination">
-        <img src="/files/imagecache/uc_thumbnail/<?php print $images['filename']; ?>" alt="<?php print $images['alt']; ?>" hspace="0" border="0" class="styleimages">
+    <div class="views-field-field-image-preview-fid">
+    <div class="field-content">
+    <a class="thickbox" href="/sites/default/files/imagecache/product/<?php print $images['filename']?>">
+        <!-- <img src="/files/imagecache/uc_thumbnail/<?php /*print $images['filename']; */?>" alt="<?php /*print $images['alt']; */?>" hspace="0" border="0" class="styleimages">-->
+        <?php print theme('imagecache', 'product', $images['filepath'], $images['alt'], $images['title']); ?>
     </a>
+    </div>
+    </div>
 <?php
 }
 ?>
-
+   
 <!--    <div class="views-field-field-image-cache-fid">
         <div class="field-content">
             <a class="imagefield imagefield-lightbox2 imagefield-lightbox2-product imagefield-field_image_cache imagecache imagecache-field_image_cache imagecache-product imagecache-field_image_cache-product lightbox-processed" rel="lightbox[24][click to enlarge]" href="http://austere.local/sites/default/files/imagecache/product_full/sz39c-9cm_0.jpg">
@@ -77,7 +82,15 @@ foreach ($node->field_image_cache as $images) {
 </div>
 </div>
 
-
+<p>***************</p>
+<?php
+$terms = taxonomy_node_get_terms_by_vocabulary($node->nid, 2);
+foreach ($terms as $term) {
+  $tagsOne[] = l($term->name, taxonomy_term_path($term));
+    }
+print t("Size") . ": " . implode(' | ', $tagsOne);
+?>
+<p>***************</p>
 
 <!--<div id="node">
     <ul>
