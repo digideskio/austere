@@ -45,13 +45,13 @@ foreach ($node->field_image_cache as $images) {
             <div class="field-content">
             <div class="item-list">
                 <ul>
-                    <li class="first"><b class="key">Size</b><span class="value"><?php print $node->taxonomy[3]->name ?></span></li>
-                    <li><b class="key">Heel Height</b><span class="value"><?php print $node->taxonomy[9]->name ?></span></li>
-                    <li><b class="key">Toe Box</b><span class="value"><?php print $node->taxonomy[21]->name ?></span></li>
-                    <li><b class="key">Heel Cage</b><span class="value"><?php print $node->taxonomy[26]->name ?></span></li>
-                    <li><b class="key">Sole</b><span class="value"><?php print $node->taxonomy[50]->name ?></span></li>
-                    <li><b class="key">Upper</b><span class="value"><?php print $node->taxonomy[59]->name ?></span></li>
-                    <li class="last"><b class="key">Straps</b><span class="value"><?php print $node->taxonomy[38]->name ?></span></li>
+                    <li class="first"><b class="key">Size</b><span class="value"><?php print $node_vocabulary[1] ?></span></li>
+                    <li><b class="key">Heel Height</b><span class="value"><?php print $node_vocabulary[2] ?></span></li>
+                    <li><b class="key">Toe Box</b><span class="value"><?php print $node_vocabulary[4] ?></span></li>
+                    <li><b class="key">Heel Cage</b><span class="value"><?php print $node_vocabulary[3] ?></span></li>
+                    <li><b class="key">Sole</b><span class="value"><?php print $node_vocabulary[7] ?></span></li>
+                    <li><b class="key">Upper</b><span class="value"><?php print $node_vocabulary[8] ?></span></li>
+                    <li class="last"><b class="key">Straps</b><span class="value"><?php print $node_vocabulary[6] ?></span></li>
                 </ul>
             </div>
             </div>
@@ -81,26 +81,3 @@ foreach ($node->field_image_cache as $images) {
 </div>
 </div>
 </div>
-
-<p>***************</p>
-<?php
-$terms = taxonomy_node_get_terms_by_vocabulary($node->nid, 2);
-foreach ($terms as $term) {
-  $tagsOne[] = l($term->name, taxonomy_term_path($term));
-    }
-print t("Size") . ": " . implode(' | ', $tagsOne);
-?>
-<p>***************</p>
-
-<!--<div id="node">
-    <ul>
-        <li><b class="key">description</b> <div class="value"><?php /*print $node->content['body']['#value']; */?></div></li>
-        <li><b class="key">price</b> <span class="value"><?php /*print uc_currency_format($node->sell_price);*/?></span></li>
-        <li><b class="key"><?php /*print $node->content['model']['#value'];  */?></b> <span class="value"><?php /*print $node->content['add_to_cart']["#value"]; */?></span></li>
-    </ul>
-</div>-->
-
-<pre>
-<?php // this will print the $node array at the bottom of each node take it out when finished ?>
-<?php var_dump($node); ?>
-</pre>
