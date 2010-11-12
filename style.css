@@ -295,7 +295,7 @@ CATALOG PAGE
     border-top: 1px solid #ccc;
     margin: 0;
     min-height: 180px;
-    padding: 40px 290px 40px 10px;
+    padding: 60px 290px 30px 10px;
     position: relative;
 }
 
@@ -311,13 +311,20 @@ CATALOG PAGE
     border-bottom: none;
 }
 
+.view-uc-shoelisting .views-field-title {
+    font-size: 1.2em;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+}
+
 .view-uc-shoelisting .views-field-field-image-cache-fid, .view-uc-shoelisting .views-field-field-image-preview-fid,
 .view-uc-shoe-single .views-field-field-image-cache-fid, .view-uc-shoe-single .views-field-field-image-preview-fid {
     padding-right: 10px;
     position: absolute;
     right: 0;
     text-align: right;
-    top: 40px;
+    top: 60px;
     width: 274px;
 }
 

@@ -45,7 +45,9 @@ else {
     <div class="views-field-body">
         <div class="field-content">
             <ul>
-                <li><b class="key">description</b><span class="value"><?php print $node->content['body']['#value'] ?></span></li>
+                <?php /*if (!empty($node->content['body']['#value']) && strcmp($node->content['body']['#value'],'<div class="product-body"></div>')!=0 ) { */?><!--
+                <li><b class="key">description</b><div class="value"><?php /*print $node->content['body']['#value'] */?></div></li>
+                --><?php /*} */?>
                 <li><b class="key">price</b><span class="value"><?php print uc_currency_format($node->sell_price); ?></span></li>
             </ul>
         </div>
