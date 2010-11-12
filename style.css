@@ -397,6 +397,19 @@ CATALOG PAGE
     margin: 0;
 }
 
+.view-uc-shoelisting .views-field-buyitnowbutton .incart, .view-uc-shoe-single .views-field-buyitnowbutton .incart {
+    border: 1px solid #ccc;
+    padding: 5px 10px 8px;
+}
+
+.view-uc-shoelisting .views-field-buyitnowbutton .incart span, .view-uc-shoe-single .views-field-buyitnowbutton .incart span {
+    display: block;
+}
+
+.view-uc-shoelisting .views-field-buyitnowbutton .incart a, .view-uc-shoe-single .views-field-buyitnowbutton .incart a {
+    text-decoration: underline;
+}
+
 #cartButton {
     float: right;
 }
@@ -423,6 +436,19 @@ fieldset, div.fieldset {
     border: none;
     margin-bottom: 30px;
     padding: 0;
+}
+
+#cart-form-products .qty input {
+    display: none;
+}
+
+#cart-form-products table {
+    margin-bottom: 0;
+}
+
+#cart-form-products td input.form-submit, #cart-form-products td input.teaser-button, #cart-form-products td input[type="button"] {
+    background-color: transparent;
+    margin: 0 0 0 15px;
 }
 
 /* ORDER REVIEW TABLE */

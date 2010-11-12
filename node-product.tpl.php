@@ -3,12 +3,12 @@
 if ( $user->uid ) {
     // user logged in
     $image = $node->field_image_cache['0'];
-    $lightBoxImagePath = "/sites/default/files/imagecache/product_full/";
+    $lightBoxImagePath = "/shop/sites/default/files/imagecache/product_full/" . $image['filename'];
 }
 else {
     // Not logged in
     $image = $node->field_image_preview['0'];
-    $lightBoxImagePath = "/sites/default/files/imagecache/product_full/";
+    $lightBoxImagePath = "/shop/" . $image['filepath'];
 }
 ?>
 
@@ -19,7 +19,7 @@ else {
     <?php // Product image ?>
     <div class="views-field-field-image-preview-fid">
     <div class="field-content">
-        <a rel="lightbox[<?php print $nid ?>][<?php print drupal_get_title() ?>]" href="<?php print $lightBoxImagePath . $image['filepath'] ?>">
+        <a rel="lightbox[<?php print $nid ?>][<?php print drupal_get_title() ?>]" href="<?php print $lightBoxImagePath ?>">
         <?php print theme('imagecache', 'product', $image['filepath'], $image['alt'], $image['title']); ?>
         </a>
     </div>
