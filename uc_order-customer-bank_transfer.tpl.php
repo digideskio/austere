@@ -273,7 +273,7 @@
 
                   <?php if ($help_text) { ?>
                   <p><b><?php echo t('Where can I get help with reviewing my order?'); ?></b></p>
-                  <p><?php echo t('To learn more about managing your orders on !store_link, please visit our <a href="!store_help_url">help page</a>.', array('!store_link' => $store_link, '!store_help_url' => $store_help_url)); ?></p>
+                  <p><?php echo t('To learn more about managing your orders on !store_link, please <a href="http://www.austere.com.au/shop/contact">contact Austere</a>.', array('!store_link' => $store_link, '!store_help_url' => $store_help_url)); ?></p>
                   <?php } ?>
 
                   <?php if ($email_text) { ?>
