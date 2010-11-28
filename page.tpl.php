@@ -1,4 +1,5 @@
 <?php // $Id: page.tpl.php,v 1.1.2.5.2.14.2.12 2010/03/01 13:37:46 psynaptic Exp $ ?>
+<?php $nodeId = $node->nid ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html<?php print drupal_attributes($html_attr); ?>>
@@ -57,7 +58,7 @@
           <?php print $help; ?>
 
           <?php print $breadcrumb; ?>
-          <?php if ($title): ?>
+          <?php if ($title && $nodeId!=22 && $nodeId!=7 && $nodeId!=8): ?>
             <h1 class="page-title"><?php print $title; ?></h1>
           <?php endif; ?>
 
