@@ -7,27 +7,24 @@
  */
 ?>
 
-<table width="95%" border="0" cellspacing="0" cellpadding="1" align="center" bgcolor="#181818" style="font-family: verdana, arial, helvetica; font-size: small;">
+<table width="602px" border="0" cellspacing="0" cellpadding="1" align="center" bgcolor="#181818" style="font-family: verdana, arial, helvetica; font-size: small;">
   <tr>
     <td>
       <table width="100%" border="0" cellspacing="0" cellpadding="5" align="center" bgcolor="#FFFFFF" style="font-family: verdana, arial, helvetica; font-size: small;">
         <?php if ($business_header) { ?>
         <tr valign="top">
           <td>
-            <table width="100%" style="font-family: verdana, arial, helvetica; font-size: small; background-color: #181818; color: #fff;">
+            <table width="100%" style="font-family: verdana, arial, helvetica; font-size: small; color: #181818;">
               <tr>
-                <td style="padding:1em;">
-                  <div>
-                  <span style="font-size: large;"><?php echo $store_name; ?></span><br />
-                  <?php echo $site_slogan; ?>
-                  </div>
-                </td>
-                <td style="text-align:right;padding:1em;">
-                  <?php echo $site_logo; ?>
+                <td>
+                    <img src="http://www.austere.com.au/shop/sites/all/themes/austere/email_header.gif" alt="Austere" width="580" height="79"/>
                 </td>
               </tr>
+              <tr>
+                <td align="right" style="padding-right: 10px;">ABN: 61 885 501 107</td>
+              </tr>
             </table>
-            <div style="padding-top:1em;padding-bottom:1em;margin-bottom:1.5em;border-bottom:1px solid #ccc;">
+            <div style="padding-top:1em;padding-bottom:1.5em;margin-bottom:0;border-bottom:1px solid #ccc;margin-left:25px;margin-right:5px;">
             <?php echo $store_address; ?><br /><?php echo $store_phone; ?>
             </div>
           </td>
@@ -35,7 +32,7 @@
         <?php } ?>
 
         <tr valign="top">
-          <td>
+          <td style="padding-left:30px;padding-right:7px;">
 
             <?php if ($thank_you_message) { ?>
                 <p><b><?php echo t('Thanks for your order, !order_first_name!', array('!order_first_name' => $order_first_name)); ?></b></p>
