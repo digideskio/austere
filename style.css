@@ -31,12 +31,30 @@ input.form-submit, input.teaser-button, input[type="button"] {
     color: #007EE4;
 }
 
+body, input, textarea, select {
+    font-family: "Lucida Grande","Lucida Sans Unicode", Lucida, sans-serif;
+}
+
 /*input.form-submit, input.teaser-button, input[type="button"] {
     background-color: #E6E6E6;
     border: 1px solid #666;
     color: #007EE4;
     font-weight: bold;
 }*/
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1.4em;
+}
+
+h2.small {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+h3.small {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
 
 /*
 BASIC CUSTOM LAYOUT
@@ -218,6 +236,7 @@ SHOPPING CART
 */
 
 #block-uc_cart-0 {
+    clear: both;
     color: #666;
     font-size: 0.9em;
     text-align: right;
@@ -264,19 +283,18 @@ SHOPPING CART
     display: none;
 }
 
-/* temp hide expandable cart */
-
-/*#block-uc_cart-0 .block-title {
-    padding-right: 1em;
+.cart-block-icon-full, .cart-block-icon-empty {
+    padding-top: 2px;
 }
 
-#block-uc_cart-0 .cart-block-arrow {
-    display: none;
-}
+/*
+LOGGED IN AS
+*/
 
-#block-uc_cart-0 #cart-block-contents {
-    display: none !important;
-}*/
+#loggedInAs {
+    float: right;
+    font-size: 0.9em;
+}
 
 /*
 CATALOG PAGE
@@ -377,7 +395,7 @@ CATALOG PAGE
     line-height: 1.25;
     text-transform: lowercase;
     vertical-align: top;
-    width: 190px;
+    width: 188px;
 }
 
 .view-uc-shoelisting .views-row ul .value p, .view-uc-shoe-single .views-row ul .value p {
@@ -475,4 +493,20 @@ fieldset, div.fieldset {
 .order-review-table .review-button-row {
     background-color: #fff;
     text-align: center;
+}
+
+/*
+CONTACT PAGE
+*/
+
+dl.contactDetails dt {
+    clear: both;
+    float: left;
+    margin: 0 0 0.25em 0;
+    width: 80px;
+}
+dl.contactDetails dd {
+    float: left;
+    margin: 0 0 0.5em 0;
+    width: 400px;
 }

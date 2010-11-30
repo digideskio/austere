@@ -19,3 +19,15 @@
 #footer ul.menu li a {
     display: inline;
 }
+
+#page {
+    height: 500px;
+}
+
+.view-uc-shoelisting .views-row ul .key, .view-uc-shoe-single .views-row ul .key {
+    display: inline;
+}
+
+.view-uc-shoelisting .views-row ul .value, .view-uc-shoe-single .views-row ul .value {
+    display: inline;
+}
