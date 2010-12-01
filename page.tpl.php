@@ -10,6 +10,11 @@
   <?php print $scripts; ?>
   <!--[if lt IE 8]><link type="text/css" rel="stylesheet" media="all" href="/shop/sites/all/themes/clean/css/ie-lt8.css" /><![endif]-->
   <!--[if lte IE 6]><link type="text/css" rel="stylesheet" media="all" href="/shop/sites/all/themes/austere/ie-lte6.css" /><![endif]-->
+    <?php
+    if ($_GET["format"] == "lightbox2") {
+      print "<link type='text/css' rel='stylesheet' media='all' href='/shop/sites/all/themes/austere/lightbox.css' />";
+    }
+    ?>
   <title><?php print $head_title; ?></title>
 </head>
 
