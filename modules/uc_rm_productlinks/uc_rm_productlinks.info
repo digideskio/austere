@@ -1,0 +1,8 @@
+; $Id$
+name = Remove Product Links
+description = Removes links from product image and title in cart summary table on the cart page.
+core = 6.x
+version = 6.x-2.0
+dependencies[] = uc_cart
+package = Ubercart - extra
+

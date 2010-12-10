@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Stuff for austere - mostly to restrict the number of items to 1
+ */
+
+/**
+ * Implementation of hook_add_to_cart().
+ */
+function uc_austere_add_to_cart($nid, $qty, $data) {
+    $alreadyInCart = checkIfInCart($nid);
+    if ($alreadyInCart) {
+        $message = "Each of these shoes is hand crafted and individual. You can only order one of each item.";
+        $result[] = array(
+            'success' => FALSE,
+            'message' => $message,
+        );
+        return $result;        
+    }
+}
+
+/**
+ * Implementation of hook_form_alter().
+ */
+function uc_austere_form_alter(&$form, &$form_state, $form_id) {
+    if(substr_count($form_id,"uc_catalog_buy_it_now_form")>0 || substr_count($form_id,"uc_product_add_to_cart_form")>0){
+        $nid = end(explode('_',$form_id));
+        if (checkIfInCart($nid)) {
+            $form['submit']['#type'] = 'hidden';
+            if (isset($_POST['submit_x'])) {
+                $form['submit'] = array(
+                    '#type' => 'submit',
+                    '#value' => 'submit',
+                );
+            }
+            $form['in_cart'] = array(
+                '#value' => '<p class="incart"><span>This is already in </span><a href="/shop/cart">your shopping cart</a></p>',
+            );
+        }
+    }
+}
+
+
+/*
+ * Check if a product is already in the cart
+ * */
+function checkIfInCart($nid) {
+    $alreadyInCart = false;
+    foreach (uc_cart_get_contents() as $cartItem) {
+        if ($cartItem->nid==$nid) {
+            $alreadyInCart = true;
+        }
+    }
+    return $alreadyInCart;
+}
+
+

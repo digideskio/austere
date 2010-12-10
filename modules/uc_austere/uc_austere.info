@@ -1,0 +1,7 @@
+; $Id$
+name = Austere special tricks
+description = Ubercart stuff just for Austere
+dependencies[] = uc_cart
+package = Ubercart - extra
+core = 6.x
+

@@ -1,0 +1,14 @@
+<?php
+function uc_rm_productlinks_form_alter(&$form, &$form_state, $form_id) {
+  if($form_id == 'uc_cart_view_form') {
+    foreach($form['items'] as $key => $item) {
+      if(!empty($item['desc']['#value'])) {
+        $form['items'][$key]['desc']['#value'] = strip_tags($item['desc']['#value']);
+		}
+	  if(!empty($item['image']['#value'])) {
+		$form['items'][$key]['image']['#value'] =  strip_tags($item['image']['#value'],"<img>");	
+		}
+    }
+  }
+}
+?>
