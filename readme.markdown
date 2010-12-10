@@ -2,6 +2,8 @@
 
 This set of files constitutes the Drupal theme used by Experience Bureau (www.experiencebureau.com) for the Austere website and online store project (www.austere.com.au).
 
+These are the files/folders that live in sites/all
+
 ## Dependencies
 
 ### Base theme
