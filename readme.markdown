@@ -10,30 +10,14 @@ This theme uses the clean base theme (http://drupal.org/project/clean)
 
 ### Modules
 
-* admin_menu
-* advanced_help
-* backup_migrate
-* cck
-* contemplate (not using yet)
-* custom_breadcrumbs (not using yet)
-* filefield
-* google_analytics (not using yet)
-* imageapi
-* imagecache
-* imagefield
-* lightbox2
-* mass_contact
-* menu_block
-* phpmailer (only enabled locally - for testing)
-* taxonomy_menu
-* token
-* transliteration
-* ubercart
-* uc_bank_transfer
-* uc_product_power_tools
+The folder structure for modules has been included in the repository but the source for most modules hasn't (i.e. just the folder structure)
+
+The source for the following modules has been included because I either wrote them or hacked existing ones:
+
+* uc_austere
+* uc_removebutton
 * uc_rm_productlinks
-* views
-* whizzywig
+* uc_tc
 
 ### Libraries
 

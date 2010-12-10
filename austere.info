@@ -1,6 +1,0 @@
-name = Austere
-description = Theme for the Austere website - uses clean as a base theme
-base theme = clean
-stylesheets[all][] = style.css
-scripts[] = script.js
-

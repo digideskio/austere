@@ -1,5 +1,7 @@
 /modules/admin_menu/*
+!/modules/admin_menu
 /modules/advanced_help/*
+!modules/advanced_help
 /modules/backup_migrate/*
 /modules/cck/*
 /modules/conditional_styles/*
